@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./App.css";
 
 export default function App() {
@@ -7,9 +8,15 @@ export default function App() {
     event.preventDefault();
     setKeyword(event.target.value);
   }
+  function handleResponse(response) {
+    console.log(response.data[0], response.data[1]);
+  }
   function search(event) {
     event.preventDefault();
     alert(`You are looking for ${keyword}`);
+    //documentation https://dictionaryapi.dev/
+    let apiUrl = "https://api.dictionaryapi.dev/api/v2/entries/en/" + keyword;
+    axios.get(apiUrl).then(handleResponse);
   }
   return (
     <div className="App">
