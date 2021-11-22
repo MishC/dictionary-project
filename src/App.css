@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
@@ -22,6 +21,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-align: center;
 }
 
 .App-link {
@@ -29,6 +29,9 @@
 }
 .inline {
   display: inline-flex;
+}
+main {
+  padding: 20px 40px;
 }
 @keyframes App-logo-spin {
   from {

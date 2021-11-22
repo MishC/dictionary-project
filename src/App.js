@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results";
 import "./App.css";
 
 export default function App() {
   let [keyword, setKeyword] = useState("");
+  let [result, setResult] = useState(null);
+
   function handleSearchWord(event) {
     event.preventDefault();
     setKeyword(event.target.value);
   }
+
   function handleResponse(response) {
-    console.log(response.data[0], response.data[1]);
+    console.log(response.data[0]);
+    setResult(response.data[0]);
   }
   function search(event) {
     event.preventDefault();
@@ -39,7 +44,11 @@ export default function App() {
           </div>
         </form>
       </header>
-      <main></main>
+      <main>
+        <div class="text-left">
+          <Results keyword={keyword} result={result} />
+        </div>
+      </main>
     </div>
   );
 }
