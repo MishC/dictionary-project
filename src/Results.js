@@ -20,10 +20,6 @@ export default function Results(props) {
       </div>
     );
   } else {
-    return (
-      <div class="Result">
-        <p> Sorry the word "{props.keyword}" is not in our database.</p>
-      </div>
-    );
+    return null;
   }
 }
