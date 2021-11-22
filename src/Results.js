@@ -8,6 +8,7 @@ export default function Results(props) {
         <h2 className="d-flex">
           {props.result.word} {"  "}[{props.result.phonetic}]
         </h2>
+        <br />
         <p>
           {props.result.meanings.map(function (meaning, index) {
             return (
@@ -17,6 +18,9 @@ export default function Results(props) {
             );
           })}
         </p>
+        <footer className="App-footer">
+          <small>Coded by MishC</small>
+        </footer>
       </div>
     );
   } else {
