@@ -4,21 +4,21 @@ import Meaning from "./Meaning";
 export default function Results(props) {
   if (props.result) {
     return (
-      <div class="Results">
-        <h2 className="d-flex">
+      <div className="Results">
+        <h1 className="text-center">
           {props.result.word} {"  "}[{props.result.phonetic}]
-        </h2>
-        <br />
+        </h1>
+
         <p>
           {props.result.meanings.map(function (meaning, index) {
             return (
-              <div key={index}>
+              <div key={index} className="">
                 <Meaning meaning={meaning} />
               </div>
             );
           })}
         </p>
-        <footer className="App-footer">
+        <footer className="App-footer text-center pb-5">
           <small>
             <a
               href="https://github.com/MishC/dictionary-project"

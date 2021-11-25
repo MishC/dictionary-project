@@ -44,9 +44,7 @@ export default function Dictionary() {
         </form>
       </header>
       <main>
-        <div class="text-left">
-          <Results keyword={keyword} result={result} />
-        </div>
+        <Results keyword={keyword} result={result} />
       </main>
     </div>
   );

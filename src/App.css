@@ -13,8 +13,11 @@
   }
 }
 */
+body {
+  background: #f9f7fe;
+}
 .App-header {
-  background-color: #282c34;
+  background-color: #344053;
   min-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -32,17 +35,60 @@
   display: inline-flex;
 }
 main {
-  padding: 20px 40px;
+  text-align: center;
+  background: #f9f7fe;
+}
+main > div {
+  max-width: 100%;
+  background: #f9f7fe;
 }
 footer {
   margin-top: 60px;
 }
-/*
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}*/
+
+h1 {
+  color: #176faa;
+  padding: 100px;
+  box-shadow: 0px 30px 50px rgb(65 50 100 / 8%);
+  margin: 0;
+  min-width: 100%;
+}
+.section {
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  border-radius: 8px;
+  background: white;
+  margin-top: 10px;
+  padding: 40px 100px 60px;
+}
+span.synonym-color {
+  color: #3eb8da;
+}
+span.synonym-color:nth-of-type(2n + 1) {
+  color: #176faa;
+}
+.pink-title {
+  color: #ed4e6b;
+}
+h2,
+h5 {
+  text-align: center;
+  margin: 30px auto 40px auto;
+}
+.Dictionary strong {
+}
+.Results {
+  background: #f9f7fe;
+}
+.Definition strong {
+  padding-right: 20px;
+}
+.Definition span::first-letter {
+  text-transform: capitalize;
+}
+.Example strong {
+  margin-left: 0.78em;
+  padding-right: 20px;
+}
+.Synonyms strong {
+  padding-right: 20px;
+}
