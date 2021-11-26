@@ -17,7 +17,7 @@ export default function Phonetics(props) {
     return (
       <div className="Phonetics">
         <div className="d-flex container section mt-3">
-          <div className="col-md-6 text-right pr-4">
+          <div className="col-md-5 text-right pr-4">
             <h1 className="text-right">{props.word}</h1>
           </div>
           <div className="col-md-6 text-leff">
