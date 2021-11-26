@@ -1,9 +1,11 @@
 body {
   background: #f9f7fe;
+  max-width: 100%;
 }
 .App-header {
   background: #344053;
   min-height: 20vh;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,26 +32,31 @@ main > div {
 footer {
   margin-top: 60px;
 }
+.App h1 {
+  color: beige;
+  padding: 20px;
+  margin: 50px auto 30px auto;
+}
 
-h1 {
+.Phonetics h1 {
   /*
   background: #344053;
   color: white;*/
   color: #176faa;
-  padding: 40px;
-  box-shadow: 0px 30px 50px rgb(65 50 100 / 8%);
   margin: 0 auto;
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   text-align: center;
 }
 .section {
-  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  box-shadow: 0 30px 50px rgb(65 50 100 / 10%);
   border-radius: 8px;
   background: white;
   margin-top: 10px;
   padding: 40px 100px 60px;
+  max-width: 70%;
 }
+
 span.synonym-color {
   color: #3eb8da;
 }
@@ -58,6 +65,7 @@ span.synonym-color:nth-of-type(2n + 1) {
 }
 .pink-title {
   color: #ed4e6b;
+  font-size: 28px;
 }
 h2,
 h5 {
@@ -78,6 +86,40 @@ h5 {
   margin-left: 0.78em;
   padding-right: 20px;
 }
+.Example em::first-letter {
+  text-transform: capitalize;
+}
 .Synonyms strong {
   padding-right: 20px;
+}
+@media (max-width: 550px) {
+  .App header {
+    padding: 0;
+    font-size: 42px;
+  }
+  .container {
+    font-size: 42px;
+  }
+  h1 {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  .section {
+    padding: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .section strong {
+    font-size: 16px;
+  }
+  .section em,
+  .section span {
+    padding-right: 10px;
+  }
+
+  i.pink-title {
+    font-size: 26px;
+  }
 }
