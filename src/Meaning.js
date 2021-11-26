@@ -5,6 +5,8 @@ import Example from "./Example";
 
 export default function Meaning(props) {
   console.log(props.meaning);
+  console.log(props.meaning);
+
   return (
     <div className="Meaning">
       {props.meaning.definitions.map(function (definition, index) {
