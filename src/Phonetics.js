@@ -5,7 +5,7 @@ export default function Phonetics(props) {
     return (
       <div className="Phonetics">
         <h1 className="text-center">
-          <a href={props.phonetics.audio} target="_">
+          <a href={props.phonetics[0].audio} target="_">
             <i class="fas fa-volume-up text-left">&nbsp;&nbsp;</i>
           </a>
           {props.word}
