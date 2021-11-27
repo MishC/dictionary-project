@@ -25,7 +25,7 @@ export default function Phonetics(props) {
               return (
                 <div key={index}>
                   <h1 className="text-left pr-2">
-                    <a href={phonetic.audio} target="_">
+                    <a href={phonetic.audio} target="_" rel="noreferrer">
                       <i class="fas fa-volume-up">&nbsp;&nbsp;</i>
                     </a>
                     {"  "}[{phonetic.text}]
