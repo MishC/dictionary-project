@@ -6,7 +6,7 @@ export default function Definition(props) {
       <div className="Definition d-inline-flex">
         <div className="row">
           <div className="col-2">
-            <strong>Definition:&nbsp;&nbsp;</strong>
+            <strong>Definition:&nbsp;</strong>
           </div>
         </div>
         <div className="row">

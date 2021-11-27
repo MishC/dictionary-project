@@ -6,7 +6,7 @@ export default function Example(props) {
       <div className="Example d-inline-flex">
         <div className="row">
           <div className="col-2">
-            <strong>Example:&nbsp;&nbsp;</strong>
+            <strong>Example:&nbsp;</strong>
           </div>
         </div>
         <div className="row">
