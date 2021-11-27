@@ -2,6 +2,9 @@ body {
   background: #f9f7fe;
   max-width: 100%;
 }
+* {
+  max-width: 100%;
+}
 .App-header {
   background: #344053;
   min-height: 20vh;
@@ -58,6 +61,10 @@ footer {
   max-width: 65%;
 }
 
+.Photos img {
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
 span.synonym-color {
   color: #3eb8da;
 }

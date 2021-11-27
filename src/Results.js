@@ -12,26 +12,14 @@ export default function Results(props) {
           phonetics={props.result.phonetics}
           word={props.result.word}
         />
-        <p>
-          {props.result.meanings.map(function (meaning, index) {
-            return (
-              <div key={index}>
-                <Meaning meaning={meaning} />
-              </div>
-            );
-          })}
-        </p>
-        <footer className="App-footer text-center pb-5">
-          <small>
-            <a
-              href="https://github.com/MishC/dictionary-project"
-              target="_"
-              title="SourceCode"
-            >
-              Coded by MishC
-            </a>
-          </small>
-        </footer>
+
+        {props.result.meanings.map(function (meaning, index) {
+          return (
+            <div key={index}>
+              <Meaning meaning={meaning} />
+            </div>
+          );
+        })}
       </div>
     );
   } else {
