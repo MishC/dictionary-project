@@ -5,23 +5,6 @@ body {
 * {
   max-width: 100%;
 }
-.App-header {
-  background: #344053;
-  min-height: 20vh;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  text-align: center;
-  box-shadow: 0 30px 30px rgb(65 50 100 / 4%);
-}
-
-.App-link {
-  color: #61dafb;
-}
 .inline {
   display: inline-flex;
 }
@@ -36,22 +19,6 @@ main > div {
 footer {
   margin-top: 60px;
 }
-.App h1 {
-  color: beige;
-  padding: 20px;
-  margin: 50px auto 30px auto;
-}
-
-.Phonetics h1 {
-  /*
-  background: #344053;
-  color: white;*/
-  color: #176faa;
-  margin: 0 auto;
-  display: block;
-  max-width: 100%;
-  text-align: center;
-}
 .section {
   box-shadow: 0 30px 50px rgb(65 50 100 / 10%);
   border-radius: 8px;
@@ -59,11 +26,6 @@ footer {
   margin-top: 10px;
   padding: 40px 100px 60px;
   max-width: 65%;
-}
-
-.Photos img {
-  border-radius: 8px;
-  margin-bottom: 20px;
 }
 span.synonym-color {
   color: #3eb8da;
@@ -83,6 +45,46 @@ h5 {
 .row {
   margin-right: 0;
 }
+.App-header {
+  background: #344053;
+  min-height: 20vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+  box-shadow: 0 30px 30px rgb(65 50 100 / 4%);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App h1 {
+  color: beige;
+  padding: 20px;
+  margin: 50px auto 30px auto;
+}
+
+.Phonetics h1 {
+  /*
+  background: #344053;
+  color: white;*/
+  color: #176faa;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  text-align: center;
+}
+
+.Photos img {
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
 .Results {
   background: #f9f7fe;
 }
