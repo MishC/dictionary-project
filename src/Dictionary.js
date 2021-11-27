@@ -25,7 +25,7 @@ export default function Dictionary() {
   }
   return (
     <div className="Dictionary">
-      <header className="App-header p-5">
+      <header className="App-header p-5 shadow-md">
         <h1>
           {" "}
           Online Dictionary <img src={image} width="60" alt="GB" />
