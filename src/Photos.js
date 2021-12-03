@@ -1,10 +1,28 @@
 import React from "react";
 
 export default function Photos(props) {
+  /*I am trying to not generate photos in some cases*/
+  /*let [type, setType] = useState(false);
+  if (props.result) {
+    props.result.meanings.map(function (meaning, index) {
+      if (index === 0) {
+        setType(
+          meaning.partOfSpeech === "preposition" ||
+            meaning.partOfSpeech === "prefix" ||
+            meaning.partOfSpeech === "conjunction" ||
+            meaning.partOfSpeech === "sufix"
+        );
+        //console.log(type);
+      }
+
+      return null;
+    });
+  }*/
+
   if (props.photos) {
     return (
       <div className="Photos">
-        <div className="section container d-flex">
+        <div className="section container d-flex mt-3">
           {" "}
           <div className="row p-0">
             {props.photos.map(function (photo, index) {
@@ -33,7 +51,7 @@ export default function Photos(props) {
               Coded by MishC
             </a>
           </small>
-        </footer>{" "}
+        </footer>
       </div>
     );
   } else {

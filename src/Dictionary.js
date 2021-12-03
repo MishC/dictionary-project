@@ -16,9 +16,11 @@ export default function Dictionary() {
 
   function handleResponse(response) {
     setResult(response.data[0]);
+    //console.log(result.meanings);
   }
   function handlePexelsResponse(response) {
-    console.log(response.data);
+    //console.log(response.data);
+
     setPhotos(response.data.photos);
   }
 
@@ -35,6 +37,7 @@ export default function Dictionary() {
 
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
+
   return (
     <div className="Dictionary">
       <header className="App-header p-5 shadow-md">
@@ -63,7 +66,7 @@ export default function Dictionary() {
       </header>
       <main>
         <Results keyword={keyword} result={result} />
-        <Photos photos={photos} />
+        <Photos photos={photos} result={result} />
       </main>
     </div>
   );
