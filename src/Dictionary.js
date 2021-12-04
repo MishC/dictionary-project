@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
-import Photos from "./Photos";
 import image from "./images/UK.png";
 
 export default function Dictionary() {
@@ -65,9 +64,20 @@ export default function Dictionary() {
         </form>
       </header>
       <main>
-        <Results keyword={keyword} result={result} />
-        <Photos photos={photos} result={result} />
+        <Results keyword={keyword} result={result} photos={photos} />
       </main>
+      <footer className="App-footer text-center pb-5">
+        <small>
+          <a
+            href="https://github.com/MishC/dictionary-project"
+            target="_"
+            title="SourceCode"
+            rel="noreferrer"
+          >
+            Coded by MishC
+          </a>
+        </small>
+      </footer>
     </div>
   );
 }

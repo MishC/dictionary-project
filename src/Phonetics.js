@@ -20,7 +20,7 @@ export default function Phonetics(props) {
     if (props.phonetics.length === 1) {
       console.log();
       return (
-        <div className="Phonetics section text-justify-center container mt-3 ms-0 p-0">
+        <div className="Phonetics section text-justify-center container mt-3 ms-0 py-5">
           <h1 className="text-center text-nowrap">
             <i class="fas fa-volume-up icon" onClick={handlePlay}>
               &nbsp;&nbsp;{" "}
@@ -40,7 +40,7 @@ export default function Phonetics(props) {
         <div className="Phonetics">
           <div className="d-flex container section mt-3">
             <div className="col-md-5 text-right pr-2">
-              <h1 className="text-right">{props.word}</h1>
+              <h1 className="text-right pl-4">{props.word}</h1>
             </div>
             <div className="col-md-6 text-leff">
               {props.phonetics.map(function (phonetic, index) {
