@@ -17,7 +17,7 @@ export default function Phonetics(props) {
   }
 
   if (props.phonetics[0].audio) {
-    if (props.phonetics.length === 1) {
+    if (props.phonetics.length <= 1) {
       console.log();
       return (
         <div className="Phonetics section text-justify-center container mt-3 ms-0 py-5">
