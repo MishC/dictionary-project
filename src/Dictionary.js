@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
-import image from "./images/UK.png";
+import image_UK from "./images/UK.png";
+import image_US from "./images/USA.png";
+import image_AU from "./images/AU.png";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
@@ -39,12 +41,31 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <header className="App-header p-5 shadow-md">
-        <h1>
-          {" "}
-          Online Dictionary <img src={image} width="60" alt="GB" />
-        </h1>
-
+      <header className="App-header p-1 shadow-md">
+        <h1> Online Dictionary </h1>
+        <div className="d-inline-block">
+          <img
+            src={image_UK}
+            width="60"
+            height="40"
+            alt="UK"
+            className="px-2"
+          />
+          <img
+            src={image_US}
+            width="60"
+            height="30"
+            alt="US"
+            className="px-2"
+          />
+          <img
+            src={image_AU}
+            width="60"
+            height="30"
+            alt="AU"
+            className="px-2"
+          />
+        </div>
         <form onSubmit={search} className="pb-5">
           <div className="inline">
             <input

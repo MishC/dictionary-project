@@ -15,10 +15,11 @@ export default function Phonetics(props) {
       timeClick: 1,
     });
   }
+  console.log(props.phonetics);
 
   if (props.phonetics[0].audio) {
     if (props.phonetics.length <= 1) {
-      console.log();
+      console.log(props.phonetics);
       return (
         <div className="Phonetics section text-justify-center container mt-3 ms-0 py-5">
           <h1 className="text-center text-nowrap">
@@ -30,8 +31,7 @@ export default function Phonetics(props) {
                 onEnd={handlePause}
               />
             </i>
-            {props.word}
-            {"  "}[{props.phonetics[0].text}]
+            {props.word} {"  "}[{props.phonetics[0].text}]
           </h1>
         </div>
       );
@@ -42,7 +42,7 @@ export default function Phonetics(props) {
             <div className="col-md-5 text-right pr-2">
               <h1 className="text-right pl-4">{props.word}</h1>
             </div>
-            <div className="col-md-6 text-leff">
+            <div className="col-md-6 text-left">
               {props.phonetics.map(function (phonetic, index) {
                 /*at https://dictionaryapi.dev/ is just one audio file, if there are two alternatives of pronunciation
               and that is by rule the audio for the first alternative*/
